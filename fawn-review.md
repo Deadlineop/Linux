@@ -1,2 +1,10 @@
 Completing the Fawn machine on Hack The Box was my first hands-on experience with real-world service enumeration and basic exploitation. Through this lab, I learned how to use Nmap to scan a target system, identify open ports, and understand what services are running. I discovered that the FTP service was allowing anonymous login, which showed me how simple misconfigurations can lead to security risks. Accessing the exposed files helped me understand why proper service configuration is critical in real environments. This experience improved my comfort with Linux commands, strengthened my understanding of network fundamentals, and gave me a clearer picture of how attackers think during the reconnaissance phase. Overall, it was a great introduction to practical penetration testing concepts.
 
+## Tools & Commands Used
+
+- nmap -sV <target-ip> → Identified open ports and running services
+- ftp <target-ip> → Connected to FTP service
+- anonymous login → Accessed misconfigured FTP server
+- ls → Enumerated files
+- get flag.txt → Retrieved exposed file
+- cat flag.txt → Viewed flag contents
